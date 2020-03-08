@@ -12,16 +12,17 @@ In the following text the **user** is both the **mentor** and the **student**. "
 
 | **Business value** | **Title** | **Acceptance criteria** |  
 | :--- | :--- | :--- |  
-|      | _List of future Demos_ | As an user I see list of all scheudle DemoDays with its:<br/>- triple-letters weekday shortcut (e.g. FRI for Friday, THU for Thursday),<br/>- full date,<br/>- guest company name (or none if not declared yet),<br/>- student projects titles which is declared to presentation,<br/>- and available empty slots (or none) |
+|      | List of future Demos | As an user I see list of all scheudle DemoDays with its:<br/>- triple-letters weekday shortcut (e.g. FRI for Friday, THU for Thursday),<br/>- full date,<br/>- guest company name (or none if not declared yet),<br/>- student projects titles which is declared to presentation,<br/>- available empty slots (or none) |
 |      |   |   |  
-|      | One Demo page |   |
+|      | One Demo page | As an user I see:<br/>- triple-letters weekday shortcut (e.g. FRI for Friday, THU for Thursday),<br/>- full date,<br/>- guest company name (or none if not declared yet),<br/>- guest company technologies,<br/>- guest company volume of open junior positions for each one (or none, as above)<br/>- guest company short description<br/>- student projects titles and short description for each one<br/>- students proposed to declare their presentation on this Demo. |
 |      |   |   |  
 |      | List of activ students |   |
 |      |   |   |
-|      | Declaration form for one presentation |   |
+|      | Declaration form for student presentation |   |
+|      |   |   |
+|      | Declaration form for guest company |   |
 |      |   |   |
 |      | Students authentication by GoogleAuth |   |
 |      |   |   | 
 |      | List of past Demos |   |
 |      |   |   |
-|      | 
