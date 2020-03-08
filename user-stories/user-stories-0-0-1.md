@@ -12,12 +12,7 @@ In the following text the **user** is both the **mentor** and the **student**. "
 
 | **Business value** | **Title** | **Acceptance criteria** |  
 | :--- | :--- | :--- |  
-|      | _List of future Demos_ | As an user I see list of all scheudle DemoDays with its:<br/>
-- triple-letters weekday shortcut (e.g. FRI for Friday, THU for Thursday),<br/>
-- full date,<br/>
-- guest company name (or none if not declared yet),<br/>
-- student projects titles which is declared to presentation,<br/>
-- and available empty slots (or none) |
+|      | _List of future Demos_ | As an user I see list of all scheudle DemoDays with its:<br/>- triple-letters weekday shortcut (e.g. FRI for Friday, THU for Thursday),<br/>- full date,<br/>- guest company name (or none if not declared yet),<br/>- student projects titles which is declared to presentation,<br/>- and available empty slots (or none) |
 |      |   |   |  
 |      | One Demo page |   |
 |      |   |   |  
