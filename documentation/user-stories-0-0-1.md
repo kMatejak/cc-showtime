@@ -14,7 +14,7 @@ In the following text the **user** is both the **mentor** and the **student**. "
 
 | **Business value** | **Title** | **Acceptance criteria** |  
 | :--- | :--- | :--- |  
-|      | List of future Demos | As an user I see list of all scheduled DemoDays with its:<br/>- triple-letters weekday shortcut (e.g. FRI for Friday, THU for Thursday),<br/>- full date,<br/>- guest company name (or none if not declared yet),<br/>- student projects titles which is declared to presentation,<br/>- available empty slots (or none) |
+|      | List of future Demos | As an user I see list of all scheduled DemoDays with its:<br/>1. triple-letters weekday shortcut (e.g. FRI for Friday, THU for Thursday),<br/>2. full date,<br/>3. guest company name (or none if not declared yet),<br/>4. student projects titles which is declared to presentation,<br/>5. available empty slots (or none) |
 |      |   |   |  
 |      | One Demo page | As an user I see:<br/>- triple-letters weekday shortcut (e.g. FRI for Friday, THU for Thursday),<br/>- full date,<br/>- guest company name (or none if not declared yet),<br/>- guest company technologies,<br/>- guest company volume of open junior positions for each one (or none if company not declared yet)<br/>- guest company short description<br/>- student project titles and short description for each one<br/>- students proposed to declare their presentation on this Demo (simple scoring: if "0" then student has highest priority to be declared). |
 |      |   |   |  
