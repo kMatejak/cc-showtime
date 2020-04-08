@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Index</title>
+</head>
+<body>
+    {% if demodays_list %}
+        <ul>
+        {% for demoday in demodays_list %}
+            <li>
+                <a href="{% url 'demodays:detail_demoday' demoday.id %}"
+                >{{ demoday.test_text }}</a>
+            </li>
+        {% endfor %}
+        </ul>
+    {% else %}
+        <p>No Demo Days are available.</p>
+    {% endif %}
+</body>
+</html>
