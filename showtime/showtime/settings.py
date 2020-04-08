@@ -75,8 +75,15 @@ WSGI_APPLICATION = 'showtime.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'cc_showt',
+        'USER': 'admin_cc_showt',
+        'PASSWORD': 'al4JAci3kocham',
+        'HOST': 'localhost',
+        'PORT': '',
+        'TEST': {
+            'NAME': 'ccshwt_test_database',
+        }
     }
 }
 
@@ -105,7 +112,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'CET'
 
 USE_I18N = True
 
