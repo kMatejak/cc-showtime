@@ -10,7 +10,7 @@
         {% for demoday in demodays_list %}
             <li>
                 <a href="{% url 'demodays:detail_demoday' demoday.id %}"
-                >{{ demoday.test_text }}</a>
+                >{{ demoday }}</a>
             </li>
         {% endfor %}
         </ul>

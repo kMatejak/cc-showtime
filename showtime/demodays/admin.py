@@ -1,12 +1,1 @@
-from django.contrib import admin
-
-from .models import demos, users, companies, techs
-
-
-admin.site.register(demos.Demo)
-admin.site.register(demos.Demoday)
-admin.site.register(users.ProjectTeam)
-admin.site.register(users.Student)
-admin.site.register(companies.Company)
-admin.site.register(companies.Representative)
-admin.site.register(techs.Tech)
+from datetime import datefrom django.contrib import adminfrom django.utils.translation import gettext_lazy as _from .models.demos import Demo, Demodayfrom .models.users import Student, ProjectTeamfrom .models.companies import Representative, Companyfrom .models.techs import Techclass UpcomingOrPastDemodaysFilter(admin.SimpleListFilter):    # Human-readable title which will be displayed in the    # right admin sidebar just above the filter options.    title = _('date status')    # Parameter fot the filter that will be used in the URL query.    parameter_name = 'planned_date'    def lookups(self, request, model_admin):        """        Returns a list of tuples. The first element in each tuple is        the coded value for the option that will appear in the URL query.        The second element is the human-readable name for the option that        will appear in the right sidebar.        """        return (            ('up', _('Upcoming')),            ('ps', _('Past')),        )    def queryset(self, request, queryset):        """        Returns the filtered queryset based on the value provided in the        query string and retrivable via `self.value()`.        """        # Compare the requested value (either 'up' or 'ps')        # to decide how to filter the queryset.        if self.value() == 'up':            print(date.today())            return queryset.filter(planned_date__gte=date.today())        if self.value() == 'ps':            return queryset.filter(planned_date__lt=date.today())class DemoInLine(admin.StackedInline):    model = Demo    extra = 0class DemodayAdmin(admin.ModelAdmin):    search_fields = ('planned_date',)    list_filter = (UpcomingOrPastDemodaysFilter,)    list_display = ('company', 'planned_date', 'did_take_place',)    fieldsets = (        (None, {'fields': ['company', 'planned_date', 'did_take_place']}),    )    inlines = (DemoInLine,)admin.site.register(Demoday, DemodayAdmin)admin.site.register(Student)admin.site.register(ProjectTeam)admin.site.register(Representative)admin.site.register(Company)admin.site.register(Tech)
