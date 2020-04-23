@@ -31,8 +31,11 @@ class Student(models.Model):
             return f"{self.name} {self.surname} \"{self.nick}\""
         return f"{self.name} {self.surname}"
 
+    def full_name(self):
+        return self.__str__()
+
     def is_obliged_to_present(self):
-        return self.module_in_school in {self.JOB_HUNT, self.ALUMNI}
+        return self.module_in_school in {self.ADVANCE_MODULE, self.JOB_HUNT}
 
 
 class ProjectTeam(models.Model):
