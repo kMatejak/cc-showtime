@@ -19,12 +19,13 @@ class Student(models.Model):
     module_in_school = models.CharField(
         max_length=3,
         choices=MODULE_IN_SCHOOL_CHOICES,
-        default=THIRD_MODULE
+        default=ADVANCE_MODULE
     )
     name = models.CharField(max_length=30)
     surname = models.CharField(max_length=30)
     nick = models.CharField(max_length=20, blank=True)
     email = models.EmailField()
+    took_demos = models.PositiveSmallIntegerField(default=0, editable=False)
 
     def __str__(self):
         if self.nick:
