@@ -1,13 +1,10 @@
 from django.contrib import admin
 from django.urls import path
 
-from . import views
-
 
 app_name = 'demodays'
 urlpatterns = [
-    path('', views.index, name='index'),
-    path('<int:demoday_id>/', views.detail_demoday, name='detail_demoday'),
+    path('', admin.site.urls, name='admin'),
 ]
 
 admin.site.site_header = "CC Showtime"
