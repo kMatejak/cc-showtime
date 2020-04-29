@@ -12,7 +12,7 @@ SECRET_KEY = 'xib3w0=a=!6bzb*%c%y_uq2jdou%)6-2(3l3lu)3ik7e5cs&k-'
 DEBUG = False
 
 ALLOWED_HOSTS = [
-    'polar-reef-02472.herokuapp.com'
+    'polar-reef-02472.herokuapp.com',
     'localhost',
 ]
 
