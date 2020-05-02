@@ -50,7 +50,7 @@ virtualenv XXX
 source XXX/bin/activate
 pip install -r showtime/requirements.txt
 ```  
-Create new postgres database, for example via psql:  
+Create new postgres database, for example via `psql`:  
 ```sql
 CREATE DATABASE zzz;
 CREATE USER admin_zzz WITH PASSWORD 'password1234' CREATEDB;
