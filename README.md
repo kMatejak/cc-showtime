@@ -39,7 +39,7 @@ Before starting work, I collected the needs of the target user (Adam) and prepar
 The application is deployed on Heroku, [here](https://ccshowtime.herokuapp.com/).  
   
 ### Linux Ubuntu 18+  
-If you want to configure local environment to run this project locally, you must have Python version 3.6+ and PostgreSQL 10.12+. To start clone the project to your machine:  
+If you want to configure local environment to run this project locally, you must have Python 3.8.2 (or higher) and PostgreSQL 10.12+. To start clone the project to your machine:  
 ```bash
 git clone git@github.com:kMatejak/cc-showtime.git YYY
 cd YYY
