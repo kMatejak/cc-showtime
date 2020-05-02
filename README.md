@@ -1,5 +1,5 @@
 # Codecooler's Showtime  
-Web application designed to track the activity of [Codecool](https://codecool.com/pl/) students during weekly frontal presentations.  
+Web application designed to track the activity of [Codecool](https://codecool.com/en/) students during weekly frontal presentations.  
   
 ## Table of contents  
 * [General info](#general-info)  
